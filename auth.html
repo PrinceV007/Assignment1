@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Auth | SneaKerr</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="./index.html" class="nav-home gradient-text">←</a>
+    </div>
+    <div class="hero-section">
+      <h1 class="heading-mini gradient-text">SneaKarr</h1>
+      <div class="auth-holder">
+        <div class="login" id="loginpane">
+          <div class="heading">Login</div>
+          <input
+            type="text"
+            placeholder="email"
+            name="email"
+            id="email"
+            class="email"
+          />
+          <input
+            type="text"
+            placeholder="password"
+            name="password"
+            id="password"
+            class="password"
+          />
+          <div class="login-trigger">Login</div>
+          <div class="subtext-info">
+            New to the platform?
+            <span class="togglepane-trigger" onclick="toggleHidden()"
+              >Register Now.</span
+            >
+          </div>
+        </div>
+        <div class="register hidden" id="registerpane">
+          <div class="heading">Register</div>
+          <input
+            type="text"
+            placeholder="username"
+            name="username"
+            id="username"
+            class="username"
+          />
+          <input
+            type="text"
+            placeholder="email"
+            name="email"
+            id="email"
+            class="email"
+          />
+          <input
+            type="text"
+            placeholder="password"
+            name="password"
+            id="password"
+            class="password"
+          />
+          <div class="register-trigger">Register</div>
+          <div class="subtext-info">
+            Already a member?
+            <span class="togglepane-trigger" onclick="toggleHidden()"
+              >Login.</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let toggleHidden = () => {
+        document.getElementById("loginpane").classList.toggle("hidden");
+        document.getElementById("registerpane").classList.toggle("hidden");
+      };
+    </script>
+  </body>
+</html>
